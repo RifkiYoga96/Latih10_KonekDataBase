@@ -9,6 +9,7 @@ namespace Latih10_KonekDataBase
         {
             InitializeComponent();
             DaftarSiswa();
+            txtSiswaID.ReadOnly = true;
         }
         public string gender = "";
 

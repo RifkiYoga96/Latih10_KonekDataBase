@@ -9,6 +9,7 @@ namespace Latih10_KonekDataBase
 {
     public class SiswaModel
     {
+       
 
         [Key]
         public int SiswaId { get; set; }
