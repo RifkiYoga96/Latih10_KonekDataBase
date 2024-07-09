@@ -85,6 +85,7 @@
             // 
             // btnInsert
             // 
+            btnInsert.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnInsert.Location = new Point(609, 406);
             btnInsert.Name = "btnInsert";
             btnInsert.Size = new Size(112, 34);
@@ -95,6 +96,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(8, 6);
             dataGridView1.Name = "dataGridView1";
@@ -119,6 +121,7 @@
             // 
             // btnDelete
             // 
+            btnDelete.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnDelete.BackColor = Color.Red;
             btnDelete.FlatAppearance.BorderSize = 0;
             btnDelete.FlatStyle = FlatStyle.Flat;
@@ -134,6 +137,7 @@
             // 
             // btnSave
             // 
+            btnSave.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnSave.BackColor = SystemColors.HotTrack;
             btnSave.FlatAppearance.BorderSize = 0;
             btnSave.FlatStyle = FlatStyle.Flat;
@@ -149,6 +153,7 @@
             // 
             // panel2
             // 
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel2.BackColor = Color.White;
             panel2.Controls.Add(radioPerempuan);
             panel2.Controls.Add(radioLaki);
@@ -166,6 +171,7 @@
             // 
             // radioPerempuan
             // 
+            radioPerempuan.Anchor = AnchorStyles.None;
             radioPerempuan.AutoSize = true;
             radioPerempuan.Location = new Point(165, 157);
             radioPerempuan.Name = "radioPerempuan";
@@ -178,6 +184,7 @@
             // 
             // radioLaki
             // 
+            radioLaki.Anchor = AnchorStyles.None;
             radioLaki.AutoSize = true;
             radioLaki.Location = new Point(34, 157);
             radioLaki.Name = "radioLaki";
@@ -190,6 +197,7 @@
             // 
             // txtKota
             // 
+            txtKota.Anchor = AnchorStyles.None;
             txtKota.Location = new Point(17, 339);
             txtKota.Name = "txtKota";
             txtKota.Size = new Size(301, 31);
@@ -197,6 +205,7 @@
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.Anchor = AnchorStyles.None;
             dateTimePicker1.Location = new Point(17, 84);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(301, 31);
@@ -204,6 +213,7 @@
             // 
             // txtAlamat
             // 
+            txtAlamat.Anchor = AnchorStyles.None;
             txtAlamat.Location = new Point(17, 259);
             txtAlamat.Multiline = true;
             txtAlamat.Name = "txtAlamat";
@@ -212,6 +222,7 @@
             // 
             // label4
             // 
+            label4.Anchor = AnchorStyles.None;
             label4.AutoSize = true;
             label4.Location = new Point(17, 231);
             label4.Name = "label4";
@@ -221,6 +232,7 @@
             // 
             // label5
             // 
+            label5.Anchor = AnchorStyles.None;
             label5.AutoSize = true;
             label5.Location = new Point(17, 129);
             label5.Name = "label5";
@@ -230,6 +242,7 @@
             // 
             // txtTempatLahir
             // 
+            txtTempatLahir.Anchor = AnchorStyles.None;
             txtTempatLahir.Location = new Point(17, 45);
             txtTempatLahir.Name = "txtTempatLahir";
             txtTempatLahir.Size = new Size(301, 31);
@@ -237,6 +250,7 @@
             // 
             // label6
             // 
+            label6.Anchor = AnchorStyles.None;
             label6.AutoSize = true;
             label6.Location = new Point(17, 17);
             label6.Name = "label6";
@@ -246,6 +260,7 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             panel1.BackColor = Color.White;
             panel1.Controls.Add(txtNIS);
             panel1.Controls.Add(label3);
@@ -260,6 +275,7 @@
             // 
             // txtNIS
             // 
+            txtNIS.Anchor = AnchorStyles.Left;
             txtNIS.Location = new Point(17, 176);
             txtNIS.Name = "txtNIS";
             txtNIS.Size = new Size(301, 31);
@@ -267,6 +283,7 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Left;
             label3.AutoSize = true;
             label3.Location = new Point(17, 148);
             label3.Name = "label3";
@@ -276,6 +293,7 @@
             // 
             // txtSiswaName
             // 
+            txtSiswaName.Anchor = AnchorStyles.Left;
             txtSiswaName.Location = new Point(17, 110);
             txtSiswaName.Name = "txtSiswaName";
             txtSiswaName.Size = new Size(301, 31);
@@ -283,6 +301,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Left;
             label2.AutoSize = true;
             label2.Location = new Point(17, 82);
             label2.Name = "label2";
@@ -292,6 +311,7 @@
             // 
             // txtSiswaID
             // 
+            txtSiswaID.Anchor = AnchorStyles.Left;
             txtSiswaID.Location = new Point(17, 45);
             txtSiswaID.Name = "txtSiswaID";
             txtSiswaID.Size = new Size(301, 31);
@@ -299,6 +319,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Left;
             label1.AutoSize = true;
             label1.Location = new Point(17, 17);
             label1.Name = "label1";
