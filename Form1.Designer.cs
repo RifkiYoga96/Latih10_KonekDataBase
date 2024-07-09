@@ -182,7 +182,7 @@
             radioLaki.Location = new Point(34, 157);
             radioLaki.Name = "radioLaki";
             radioLaki.Size = new Size(104, 29);
-            radioLaki.TabIndex = 8;
+            radioLaki.TabIndex = 6;
             radioLaki.TabStop = true;
             radioLaki.Text = "Laki-Laki";
             radioLaki.UseVisualStyleBackColor = true;
@@ -193,14 +193,14 @@
             txtKota.Location = new Point(17, 339);
             txtKota.Name = "txtKota";
             txtKota.Size = new Size(301, 31);
-            txtKota.TabIndex = 7;
+            txtKota.TabIndex = 8;
             // 
             // dateTimePicker1
             // 
             dateTimePicker1.Location = new Point(17, 84);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(301, 31);
-            dateTimePicker1.TabIndex = 6;
+            dateTimePicker1.TabIndex = 5;
             // 
             // txtAlamat
             // 
@@ -208,7 +208,7 @@
             txtAlamat.Multiline = true;
             txtAlamat.Name = "txtAlamat";
             txtAlamat.Size = new Size(301, 74);
-            txtAlamat.TabIndex = 5;
+            txtAlamat.TabIndex = 7;
             // 
             // label4
             // 
@@ -233,7 +233,7 @@
             txtTempatLahir.Location = new Point(17, 45);
             txtTempatLahir.Name = "txtTempatLahir";
             txtTempatLahir.Size = new Size(301, 31);
-            txtTempatLahir.TabIndex = 1;
+            txtTempatLahir.TabIndex = 4;
             // 
             // label6
             // 
@@ -263,7 +263,7 @@
             txtNIS.Location = new Point(17, 176);
             txtNIS.Name = "txtNIS";
             txtNIS.Size = new Size(301, 31);
-            txtNIS.TabIndex = 5;
+            txtNIS.TabIndex = 3;
             // 
             // label3
             // 
@@ -279,7 +279,7 @@
             txtSiswaName.Location = new Point(17, 110);
             txtSiswaName.Name = "txtSiswaName";
             txtSiswaName.Size = new Size(301, 31);
-            txtSiswaName.TabIndex = 3;
+            txtSiswaName.TabIndex = 2;
             // 
             // label2
             // 

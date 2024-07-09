@@ -14,8 +14,8 @@ namespace Latih10_KonekDataBase
 
         public void DaftarSiswa()
         {
-            var db = new SekolahDbContext();
-            var ListSiswa = db.siswa1.ToList();
+            SekolahDbContext db = new SekolahDbContext();
+            var ListSiswa = db.siswa.ToList();
             dataGridView1.DataSource = ListSiswa;
         }
 
@@ -28,7 +28,7 @@ namespace Latih10_KonekDataBase
         {
             var NewSiswa = new SiswaModel();
             using var db = new SekolahDbContext();
-            db.siswa1.Add(NewSiswa);
+            db.siswa.Add(NewSiswa);
             db.SaveChanges();
 
             ShowInput(NewSiswa);
@@ -36,16 +36,15 @@ namespace Latih10_KonekDataBase
 
         public void ShowInput(SiswaModel siswa)
         {
-            txtSiswaID.Text = siswa.SiswaID.ToString();
+            txtSiswaID.Text = siswa.SiswaId.ToString();
             txtSiswaName.Text = siswa.SiswaName;
-            txtNIS.Text = siswa.NIS;
+            txtNIS.Text = siswa.Nis;
             txtTempatLahir.Text = siswa.TempatLahir;
-            dateTimePicker1.Value = siswa.TanggalLahir;
-
+            dateTimePicker1.Value = siswa.TglLahir;
             txtAlamat.Text = siswa.Alamat;
             txtKota.Text = siswa.Kota;
-
-            tabControl1.SelectedIndex = 1;
+            //==
+            tabControl1.SelectTab(1);
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -56,18 +55,18 @@ namespace Latih10_KonekDataBase
         public void ListData()
         {
             using var db = new SekolahDbContext();
-            var listSiswa = db.siswa1.ToList();
+            var listSiswa = db.siswa.ToList();
             dataGridView1.DataSource = listSiswa;
             tabControl1.SelectedIndex = 0;
         }
         public void SaveData()
         {
             using var db = new SekolahDbContext();
-            var siswa = db.siswa1.Find(int.Parse(txtSiswaID.Text));
+            var siswa = db.siswa.Find(int.Parse(txtSiswaID.Text));
 
             siswa.SiswaName = txtSiswaName.Text;
-            siswa.NIS = txtNIS.Text;
-            siswa.TanggalLahir = dateTimePicker1.Value;
+            siswa.Nis = txtNIS.Text;
+            siswa.TglLahir = dateTimePicker1.Value;
             siswa.TempatLahir = txtTempatLahir.Text;
             siswa.Gender = gender;
             siswa.Alamat = txtAlamat.Text;
@@ -82,7 +81,7 @@ namespace Latih10_KonekDataBase
                 return;
 
             using var db = new SekolahDbContext();
-            var Siswa = db.siswa1.Find(int.Parse(siswaID));
+            var Siswa = db.siswa.Find(int.Parse(siswaID));
             ShowInput(Siswa);
         }
 
@@ -109,11 +108,11 @@ namespace Latih10_KonekDataBase
         {
             var siswaID = dataGridView1.CurrentRow.Cells["SiswaID"].Value.ToString();
             using var db = new SekolahDbContext();
-            var siswa = db.siswa1.Find(int.Parse(siswaID));
+            var siswa = db.siswa.Find(int.Parse(siswaID));
 
             if (siswa != null)
             {
-                db.siswa1.Remove(siswa);
+                db.siswa.Remove(siswa);
                 db.SaveChanges();
                 dataGridView1.Refresh();
                 tabControl1.SelectedIndex  = 0;

@@ -9,10 +9,11 @@ namespace Latih10_KonekDataBase
 {
     public class SekolahDbContext : DbContext
     {
-        public DbSet<SiswaModel> siswa1 { get; set; }
+        public DbSet<SiswaModel> siswa { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(@"Server=localhost;Database=sekolah;Trusted_Connection=True;TrustServerCertificate=True");
+            options.UseSqlServer(@"Server=dev.smart-ics.com;Database=DbKerjaPraktek;User Id=KpLogin;Password=K3rjaPraktekLogin;TrustServerCertificate=True");
         }
     }
 }
